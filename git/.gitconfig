@@ -1,0 +1,14 @@
+[alias]
+	ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
+	s = status
+	l = log
+	lo = log --oneline
+	ultimate-log = log --graph --oneline --decorate
+	amend = commit -a --amend
+[user]
+	name = Tamer Tas
+	email = contact@tmrts.com
+[core]
+	editor = nvim
+[color]
+	ui = auto

@@ -1,0 +1,18 @@
+Config { font = "-*-Fixed-Bold-R-Normal-*-13-*-*-*-*-*-*-*"
+       , bgColor = "#1b1918"
+       , fgColor = "#03A9F4"
+       , position = Top
+       , persistent = True
+       , border = NoBorder
+       , commands = [ Run MultiCpu ["-L","25","-H","75","--low","green","--normal","aquamarine2","--high","chocolate1"] 10
+                    , Run CpuFreq ["-t", "<cpu0>Ghz","-L","800","-H","2800","--low","green","--normal","aquamarine2","--high","chocolate1"] 10
+                    , Run Memory ["-t","Mem: <usedratio>%"] 10
+                    , Run Network "enp3s0" ["-t","U/D: <rx>KB/<tx>KB"] 10
+                    , Run Swap [] 10
+                    , Run Date "%a %b %_d %k:%M" "date" 10
+                    , Run StdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = " %StdinReader% }{ %enp3s0% | %multicpu% @ %cpufreq% | %memory% + %swap%    %date% "
+       }

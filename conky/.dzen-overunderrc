@@ -1,0 +1,11 @@
+conky.config = {
+    background = true,
+    out_to_console = false,
+    out_to_x = false,
+    own_window = false,
+    update_interval = 999999,
+    use_spacer = none,
+    total_run_times = 0,
+}
+
+conky.text = [[]]

@@ -1,0 +1,20 @@
+! Alt_L ~ Super_L
+remove Mod1 = Alt_L
+remove Mod4 = Super_L
+keysym Alt_L = Super_L
+keysym Super_L = Alt_L
+add Mod1 = Alt_L
+add Mod4 = Super_L
+
+! Control_R ~ Alt_R
+remove Mod1 = Alt_R
+remove Control = Control_R
+keysym Alt_R = Control_R
+keysym Control_R = Alt_L
+add Mod1 = Alt_R
+add Control = Control_R
+
+! Caps_Lock -> Alt_L
+remove Lock = Caps_Lock
+keysym Caps_Lock = Alt_L
+add Mod1 = Alt_L

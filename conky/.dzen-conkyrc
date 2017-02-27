@@ -1,0 +1,21 @@
+conky.config = {
+    background = true,
+    out_to_x = false,
+    own_window = false,
+    out_to_console = true,
+    update_interval = 1,
+    use_spacer = none,
+    total_run_times = 0,
+    format_human_readable = true,
+    double_buffer = true,
+}
+
+conky.text = [[
+^bg(\#528588) ^fg(\#00BCD4)^i(/home/tmrts/.icons/net_wired.xbm) ^fg(\#DEE3E0)${exec echo 172.17.72.12} ^fg()^bg() \
+^bg(\#528588) ^fg(\#00BFA5)^i(/home/tmrts/.icons/cpu.xbm) ^fg(\#DEE3E0)${cpu cpu0}% ^fg()^bg() \
+^bg(\#528588) ^fg(\#FFEB3B)^i(/home/tmrts/.icons/mem.xbm) ^fg(\#DEE3E0)${memperc}% ^fg()^bg() \
+^bg(\#528588) ^fg(\#FF9800)^i(/home/tmrts/.icons/diskette.xbm) ^fg(\#DEE3E0)${swapperc}% ^fg()^bg() \
+^bg(\#528588) ^fg(\#EF5350)^i(/home/tmrts/.icons/net_down_03.xbm) ^fg(\#DEE3E0)${downspeedf enp3s0} k/s ^fg()^bg() \
+^bg(\#528588) ^fg(\#64DD17)^i(/home/tmrts/.icons/net_up_03.xbm) ^fg(\#DEE3E0)${upspeedf enp3s0} k/s ^fg()^bg() \
+^bg(\#528588) ${time ^fg(#DEE3E0)^fn(FontAwesome:size=9)^fn() %Y-%m-%d^fg() ^bg() ^bg(#528588) ^fg(#DEE3E0)^fn(FontAwesome:size=10)^fn() %a %H:%M %p} ^fg()^bg()\
+]]

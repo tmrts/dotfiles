@@ -1,0 +1,42 @@
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto -lSh'
+
+    alias grep='grep --color=auto'
+fi
+
+# some ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+alias vim='nvim'
+
+#alias emacs='emacsclient -c'
+
+# Make current directory the go project root
+alias gopath='export GOPATH=${PWD}; export GOBIN=${GOPATH}/bin'
+
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+# Get my IP address from a DNS server. A fast and robust method.
+alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
+
+# Get my IP address using HTTPS.
+alias httpsip='curl -s https://4.ifcfg.me/'
+
+# Set the time zone to prevent weechat from polling it.
+alias weechat="TZ=Europe/Istanbul weechat"
+
+alias set-goenv="export GOPATH=${PWD}; export GOBIN=${PWD}/bin"
+
+# Captures active window
+# alias termcapture="recordmydesktop --no-sound --no-cursor --windowid $(xprop -root | sed -n '/^_NET_ACTIVE_WINDOW/ s/.* // p') -v_quality 63"
+
+# Sane browser options
+alias chrome="${BROWSER} --cache-data-dir=/dev/shm/cache --process-per-site"

@@ -1,0 +1,59 @@
+[options]
+    font = Monospace 9
+    resize_grip = false
+    scroll_on_output = false
+    scroll_on_keystroke = true
+    audible_bell = true
+    visible_bell = false
+    mouse_autohide = true
+    allow_bold = true
+    dynamic_title = true
+    urgent_on_bell = true
+    clickable_url = false
+    scrollback_lines = 1000
+    search_wrap = true
+
+    cursor_blink = system
+    cursor_shape = block
+    browser = $BROWSER
+
+    # word characters used for word selection
+    # (default if unset: all graphic non-punctuation/space characters)
+    #word_chars = -A-Za-z0-9,./?%&#:_=+@~
+
+[colors]
+    foreground = #FFFFFF
+    #foreground_bold = #ffffff
+    #foreground_dim = #888888
+    background = #000000
+    cursor = #fffff
+
+    # if unset, will reverse foreground and background
+    highlight = #2f2f2f
+
+    color0 = #000000
+    color1 = #AA0000
+    color2 = #00AA00
+    color3 = #AA5500
+    color4 = #0000AA
+    color5 = #AA00AA
+    color6 = #00AAAA
+    color7 = #AAAAAA
+    color8 = #555555
+    color9 = #FF5555
+    color10 = #55FF55
+    color11 = #FFFF55
+    color12 = #5555FF
+    color13 = #FF55FF
+    color14 = #55FFFF
+    color15 = #FFFFFF
+
+[hints]
+    foreground = #55FFFF
+
+    foreground = #dcdccc
+    background = #3f3f3f
+    padding = 2
+    border = #3f3f3f
+    border_width = 0.5
+    roundness = 2.0
