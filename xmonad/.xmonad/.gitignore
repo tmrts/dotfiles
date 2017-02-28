@@ -14,3 +14,13 @@ cabal.sandbox.config
 *.aux
 *.hp
 .stack-work/
+
+# XMonad artifacts
+history
+result
+xmonad.errors
+xmonad.hi
+.xmonad.hs.swp
+xmonad.o
+xmonad.state
+xmonad-x86*
